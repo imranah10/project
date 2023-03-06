@@ -1,0 +1,102 @@
+/* gallery-section */
+.gallery-section {
+  border-radius: 10px;
+  margin: 10px 15px;
+
+  background-color: brown;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.gallery-section .gimage {
+  box-sizing: border-box;
+  margin: 20px 25px -100px 25px;
+  height: 500px;
+  width: 400px;
+}
+.gallery-section .gimage img {
+  border-radius: 10px;
+  height: 350px;
+  width: 360px;
+}
+h2 {
+  text-align: center;
+  word-spacing: 16px;
+  margin: 10px 0px;
+}
+h2 span {
+  color: orange;
+}
+
+/* download-section  */
+.download-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px;
+}
+.download-section .download {
+  text-align: center;
+  padding: 10px;
+}
+.download-section .download p {
+  color: rgb(255, 86, 8);
+}
+.download-section .download a {
+  text-decoration: none;
+  border: 2px solid brown;
+  background-color: black;
+  border-radius: 5px;
+  padding: 8px;
+  color: white;
+}
+.download-section .download a:hover {
+  background-color:brown;
+}
+p,
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 550;
+}
+
+/* FOOTER-SECTION */
+
+footer {
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 10px;
+  padding: 50px;
+}
+footer p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 550;
+}
+
+/* responsive  */
+
+@media (max-width: 487px) {
+  .download-section .download {
+    font-size: 0.7rem;
+  }
+
+  .download-section .download h4 {
+    font-size: 0.9rem;
+  }
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .download-section .download {
+    font-size: 0.6rem;
+  }
+
+  .download-section .download h4 {
+    font-size: 0.9rem;
+  }
+  footer p {
+    font-size: 0.7rem;
+  }
+}

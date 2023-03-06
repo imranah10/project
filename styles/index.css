@@ -1,0 +1,203 @@
+img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 1s all ease;
+}
+/* notice section  */
+.notice-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 5px;
+}
+.notice {
+  width: 400px;
+  background-color: brown;
+  height: 200px;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.notice p {
+  text-align: center;
+  height: 100px;
+}
+.notice h5 {
+  color: aqua;
+  background-color: black;
+}
+
+/* .about-us-sction */
+.about-us-section {
+  background-color: brown;
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about-us-section .about-us-content {
+  padding: 5px;
+}
+.about-us-section img {
+  margin-top: 5px;
+  height: 350px;
+}
+.about-us-section h2 {
+  color: aqua;
+}
+.about-us-section p {
+  color: white;
+}
+/* facility-section */
+
+.facility-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  margin: 0px 50px;
+  background-color: black;
+  border-radius: 10px;
+}
+.facility-section .facility-content {
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+  background-color: brown;
+  margin: 10px;
+  padding: 5px;
+}
+.facility-section .facility-content img {
+  margin: 5px 0px;
+  height: 250px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.facility-section h4 {
+  color: aqua;
+}
+.facility-section p {
+  color: white;
+}
+
+/* STAFF-SECTION */
+.staff-section {
+  /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0px 50px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.staff-section .staff-content {
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+  background-color: brown;
+  margin: 10px;
+  padding: 5px;
+}
+.staff-section .staff-content img {
+  margin: 5px 0px;
+  height: 250px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.staff-section h4 {
+  color: aqua;
+}
+.staff-section p {
+  color: white;
+}
+
+/* FOOTER-SECTION */
+
+footer {
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 10px;
+  padding: 50px;
+}
+/* making responsive */
+
+/* for medium device 537px  */
+@media (max-width: 537px) {
+ 
+  .notice-section {
+    display: inline;
+  }
+  .about-us-section {
+    display: inline;
+  }
+  .about-us-content {
+    text-align: center;
+    background-color: brown;
+    border-radius: 10px;
+    margin: 0px 5px;
+  }
+  .about-us-content p {
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+  }
+  .about-us-section .about-us-content img {
+    width: 250px;
+    height: 150px;
+  }
+  .facility-section {
+    display: inline-block;
+  }
+
+  .staff-section {
+    background-color: black;
+    display: inline;
+  }
+  .staff-section .staff-content img {
+    padding: 0px;
+    height: 170px;
+  }
+  .staff-section .staff-content {
+    height: 280px;
+  }
+}
+
+/* for 330 px devices */
+
+/* for 536px -789px devices  */
+
+@media (max-width: 788px) {
+  .facility-section {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+  }
+  .about-us-section .about-us-content img {
+    width: 200px;
+    height: 220px;
+  }
+  .staff-section .staff-content {
+    height: 350px;
+    margin-left: 3px;
+    margin-right: 5px;
+  }
+  .staff-section .staff-content img {
+    height: 220px;
+    width: 200px;
+  }
+  .notice-section {
+    display: inline;
+  }
+  .notice-section .notice {
+    width: 100%;
+  }
+}
